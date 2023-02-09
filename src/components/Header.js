@@ -25,16 +25,14 @@ const Header = () => {
 				</div>
 			</header>
 			<header className='header-upper py-1'>
-				<div className='container-fluid'>
+				<div className='container-xxl'>
 					<div className='row align-items-center'>
-						<div className='col-3'>
-							<h2>
-								<Link to='/'>
-									<img src='/logo-main.png' alt='' />
-								</Link>
-							</h2>
+						<div className='col-2'>
+							<Link to='/'>
+								<img src='/logo-main.png' alt='' className='logo' />
+							</Link>
 						</div>
-						<div className='col-5'>
+						<div className='col-6'>
 							<div className='input-group'>
 								<input
 									type='text'
@@ -95,8 +93,38 @@ const Header = () => {
 				<div className='container-xxl'>
 					<div className='row'>
 						<div className='col-12'>
-							<div className='menu-bottom d-flex align-items-center'>
-								<div></div>
+							<div className='menu-bottom d-flex align-items-center gap-30'>
+								<div>
+									<div className='dropdown'>
+										<button
+											className='btn btn-secondary dropdown-toggle bg-transparent border-0
+											gap-15 d-flex align-items-center'
+											type='button'
+											id='dropdownMenuButton1'
+											data-bs-toggle='dropdown'
+											aria-expanded='false'>
+											<img src='images/menu.svg' alt='menu-svg' />
+											<span className='me-1 d-inline-block'>Shop Categories</span>
+										</button>
+										<ul className='dropdown-menu' aria-labelledby='dropdownMenuButton1'>
+											<li>
+												<Link className='dropdown-item' to='#'>
+													Action
+												</Link>
+											</li>
+											<li>
+												<Link className='dropdown-item' to='#'>
+													Another action
+												</Link>
+											</li>
+											<li>
+												<Link className='dropdown-item' to='#'>
+													Something else here
+												</Link>
+											</li>
+										</ul>
+									</div>
+								</div>
 								<div className='menu-links'>
 									<div className='d-flex align-items-center gap-15'>
 										<NavLink to='/'>Home</NavLink>
