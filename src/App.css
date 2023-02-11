@@ -109,3 +109,33 @@ a {
 }
 
 /* Header part End */
+
+
+
+
+/* Footer Section Start */
+
+
+footer {
+  background-color: var(--color-bottom-menubar);
+}
+
+footer:not(:first-child) {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .newsletter {
+  border-radius: 0px;
+}
+
+footer .input-group-text {
+  background-color: var(--color-bottom-menubar);
+  color: #ffff;
+  padding: 8px 17px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 0px;
+
+}
+
+/* Footer Section End */
