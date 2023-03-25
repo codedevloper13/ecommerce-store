@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import Marquee from "react-fast-marquee";
 
 const Home = () => {
 	return (
@@ -11,7 +12,7 @@ const Home = () => {
 					<div className='row'>
 						<div className='col-6'>
 							<div className='main-banner  position-relative py-3'>
-								<img src='images/main-banner-1.jpg' className='img-fluid rounded-3' alt='main-banner' />
+								<img src='images/main-banner-1.png' className='img-fluid rounded-3' alt='main-banner' />
 								<div className='main-banner-content position-absolute'>
 									<h4>SUPERCHARGED FOR PROS.</h4>
 									<h5>ipad S13+ Pro.</h5>
@@ -237,6 +238,45 @@ const Home = () => {
 				</div>
 			</section>
 			{/* Category Section End */}
+
+			{/* Brand Section Start */}
+			<section className='marque-wrapper py-5'>
+				<div className='container-xxl'>
+					<div className='row'>
+						<div className='col-12'>
+							<div className='marque-inner-wrapper card-wrapper'>
+								<Marquee>
+									<div className='mx-4 w-25'>
+										<img src='images/brand-01.png' alt='brand' />
+									</div>
+									<div className='mx-4 w-25'>
+										<img src='images/brand-02.png' alt='brand' />
+									</div>
+									<div className='mx-4 w-25'>
+										<img src='images/brand-03.png' alt='brand' />
+									</div>
+									<div className='mx-4 w-25'>
+										<img src='images/brand-04.png' alt='brand' />
+									</div>
+									<div className='mx-4 w-25'>
+										<img src='images/brand-05.png' alt='brand' />
+									</div>
+									<div className='mx-4 w-25'>
+										<img src='images/brand-06.png' alt='brand' />
+									</div>
+									<div className='mx-4 w-25'>
+										<img src='images/brand-07.png' alt='brand' />
+									</div>
+									<div className='mx-4 w-25'>
+										<img src='images/brand-08.png' alt='brand' />
+									</div>
+								</Marquee>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			{/* Brand Section End */}
 		</>
 	);
 };
