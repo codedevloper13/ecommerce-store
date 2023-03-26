@@ -17,18 +17,20 @@ const Footer = () => {
 							</div>
 						</div>
 						<div className='col-7'>
-							<div className='input-group'>
-								<input
-									type='text'
-									className='form-control py-1 newsletter'
-									placeholder='Your Email Address.'
-									aria-label='Your Email Address.'
-									aria-describedby='basic-addon2'
-								/>
-								<span className='input-group-text p-2' id='basic-addon2'>
-									Subscribe
-								</span>
-							</div>
+							<form>
+								<div className='input-group'>
+									<input
+										type='text'
+										className='form-control py-1 newsletter'
+										placeholder='Your Email Address.'
+										aria-label='Your Email Address.'
+										aria-describedby='basic-addon2'
+									/>
+									<button type='submit' className='input-group-text p-2' id='basic-addon2'>
+										Subscribe
+									</button>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
